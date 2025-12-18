@@ -114,22 +114,27 @@ pnpm build
 ```
 
 ### 📦 Scripts
+
 - pnpm dev – Start development server
 - pnpm build – Create production build
 - pnpm preview – Preview production build
 
 ### 🎨 Styling
+
 - Tailwind CSS is used exclusively
 - Custom colors and spacing are defined in tailwind.config.ts
 - Responsive behavior is handled using Tailwind breakpoints
 
 ### 📌 Notes
+
 - This project is optimized for landing pages and marketing sites
 - Designed to be easily extendable with backend or CMS later
 - Clean separation of concerns for maintainability
 
 ## 👤 Author
+
 Built as part of **GraphicsHala Internship**.
 
 ## 📄 License
+
 This project is intended for internal and demonstration use.
