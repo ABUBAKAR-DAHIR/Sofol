@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import { news } from "../../constants/constants";
-import { Button } from "../components/ui/button";
+import { Button } from "./ui/button";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 

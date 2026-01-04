@@ -1,5 +1,5 @@
-import PricingCard from "../components/PricingCard"
-import { pricingCards } from '../../constants/constants'
+import PricingCard from "../PricingCard"
+import { pricingCards } from '../../../constants/constants'
 import { Element } from "react-scroll"
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -15,7 +15,7 @@ export default function Pricing() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9 }}
     >
-        <Element name="pricing"  className="py-20 flex flex-col items-center justify-center max-lg:px-10 max-md:px-6 max-md:text-center">
+        <Element name="pricing"  className=" flex flex-col items-center justify-center max-lg:px-10 max-md:px-6 max-md:text-center">
             <p className="capitalize text-sofolRed">about us</p>
             <p className="font-semibold text-[25px] max-md:text-[22px]">Unlock Your Potential with Our Professional Services!</p>
             <div className="flex gap-2 my-2 max-md:mt-4">

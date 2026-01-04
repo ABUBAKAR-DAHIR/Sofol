@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import { buttonInfos } from "../../constants/constants";
-import AboutButton from "../components/AboutButton";
+import AboutButton from "./AboutButton";
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
@@ -19,7 +19,7 @@ export default function About() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9 }}
     >
-        <Element name="about" className="p-10 py-20 flex flex-col items-center">
+        <Element name="about" className="p-10 flex flex-col items-center">
             <p className="capitalize text-sofolRed">about us</p>
             <p className="font-semibold text-[25px]">Who we are: Dreamers, doers, and change-makers.</p>
 
