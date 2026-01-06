@@ -109,7 +109,7 @@ export default function Footer() {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-12 h-12 object-cover rounded-md flex-shrink-0"
+                  className="w-12 h-12 object-cover rounded-md shrink-0"
                 />
 
                 <div className="min-w-0">
