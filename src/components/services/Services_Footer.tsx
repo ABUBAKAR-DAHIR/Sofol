@@ -9,33 +9,41 @@ export default function ServicesFooter() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <footer className="w-full bg-white pt-24 flex flex-col overflow-x-hidden">
+    <footer
+      aria-label="Footer section"
+      className="w-full bg-white pt-24 flex flex-col overflow-x-hidden"
+    >
+      
       {/* MAIN FOOTER */}
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 80 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-7xl mx-auto px-6 w-full"
+        className="max-w-7xl mx-auto px-6"
       >
-        {/* TOP */}
+        {/* TOP SECTION */}
         <div className="flex flex-col items-center text-center gap-6">
-          <img src="/footer/sofol_footer.svg" alt="Sofol logo" className="w-24" />
+          <img
+            src="/footer/sofol_footer.svg"
+            alt="Sofol logo"
+            className="w-24"
+          />
 
-          <p className="max-w-3xl text-xs text-gray-600">
-            We are a software company focused on creating powerful digital
-            products that help teams work efficiently and grow with confidence.
+          <p className="max-w-3xl text-xs text-gray-600 leading-relaxed">
+            We are a software company focused on creating powerful digital products
+            that help teams work efficiently and grow with confidence.
             <Button variant="link" className="text-sofolRed text-xs px-1">
               Read more
             </Button>
           </p>
 
           {/* DETAILS */}
-          <div className="flex flex-wrap justify-center gap-6 w-full">
+          <div className="flex justify-evenly w-full flex-wrap">
             {footerDetails.map((footer, i) => (
-              <div key={i} className="flex flex-col items-center gap-2 w-20">
-                <img src={footer.image} alt={footer.name} className="w-8 h-8" />
-                <p className="text-xs font-semibold uppercase text-sofolBlack text-center">
+              <div key={i} className="flex flex-col items-center gap-2">
+                <img src={footer.image} alt={footer.name} className="w-8" />
+                <p className="text-xs font-semibold uppercase text-sofolBlack">
                   {footer.name}
                 </p>
               </div>
@@ -44,78 +52,67 @@ export default function ServicesFooter() {
         </div>
 
         {/* DIVIDER */}
-        <div className="my-12 h-px bg-gray-200 w-full" />
+        <div className="my-12 h-px bg-gray-200" />
 
-        {/* CONTENT */}
-        <div className="flex flex-col xl:flex-row gap-12 w-full">
-          {/* ABOUT */}
-          <div className="flex flex-col gap-6 max-w-lg w-full">
-            <h1 className="font-semibold uppercase text-sofolBlack">About</h1>
-            <p className="text-sm text-sofolBlack/75">
+        <div className="flex flex-wrap justify-between w-full gap-8 max-xl:justify-evenly">
+          <div className="max-w-lg flex flex-col justify-between max-md:gap-4">
+            <h1 className="font-semibold uppercase text-sofolBlack">about</h1>
+            <p className="text-sm text-sofolBlack/75 max-w-lg">
               We are Sofol, delivering innovative software solutions that empower
               businesses to grow, streamline operations, and achieve digital
-              excellence...
-              <span className="text-sofolRed underline cursor-pointer ml-1">
+              excellence across modern platforms...
+              <span className="text-sofolRed underline cursor-pointer">
                 Read more
               </span>
             </p>
 
-            <h1 className="font-semibold uppercase text-sofolBlack">Newsletter</h1>
-
-            <div className="flex flex-col sm:flex-row gap-2 w-full">
+            <h1 className="font-semibold uppercase text-sofolBlack">newsletter</h1>
+            <div className="flex w-full justify-evenly gap-2">
               <input
+                type="text"
                 placeholder="Enter your email"
-                className="w-full outline-none bg-sofolBlack/10 rounded-lg p-4 text-xs"
+                className="flex-1 outline-none bg-sofolBlack/10 rounded-lg p-4 text-xs"
               />
-              <Button className="bg-sofolRed px-6 py-4">Subscribe</Button>
+              <Button className="bg-sofolRed p-6">Subscribe</Button>
             </div>
           </div>
 
-          {/* POSTS */}
-          <div className="flex flex-col gap-4 w-full max-w-md">
-            <h1 className="font-semibold uppercase text-sofolBlack text-center xl:text-left">
-              Recent Posts
+          <div className="flex flex-col justify-between gap-4">
+            <h1 className="font-semibold uppercase text-sofolBlack max-md:text-center">
+              recent posts
             </h1>
 
             {posts.map((post, i) => (
-              <div key={i} className="flex gap-3">
-                <img
-                  src={post.image}
-                  className="w-12 h-12 object-cover rounded-md shrink-0"
-                  alt={post.title}
-                />
-                <div className="min-w-0">
-                  <p className="text-sm font-semibold truncate">{post.title}</p>
+              <div key={i} className="flex flex-wrap gap-2">
+                <img src={post.image} />
+                <div className="flex flex-col justify-evenly">
+                  <p className="text-sm font-semibold md:max-w-50">
+                    {post.title}
+                  </p>
                   <p className="text-xs text-gray-500">{post.date}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* SOCIAL */}
-          <div className="flex flex-col gap-4 w-full max-w-sm">
-            <h1 className="font-semibold uppercase text-sofolBlack text-center xl:text-left">
-              Social Media Posts
+          <div className="flex flex-col gap-4">
+            <h1 className="font-semibold uppercase text-sofolBlack max-xl:text-center">
+              social media posts
             </h1>
-
-            <div className="grid grid-cols-3 sm:grid-cols-4 xl:flex xl:flex-wrap gap-4 justify-center xl:justify-start">
+            <div className="grid grid-cols-3 max-xl:flex max-xl:flex-wrap gap-4">
               {posts_images.map((img, i) => (
-                <img
-                  key={i}
-                  src={img}
-                  className="w-16 h-16 object-cover rounded-md"
-                  alt="social"
-                />
+                <img key={i} src={img} alt="image" className="w-16 object-contain" />
               ))}
             </div>
           </div>
         </div>
       </motion.div>
 
-      {/* BOTTOM */}
+      {/* BOTTOM BAR */}
       <div className="bg-sofolBlack mt-16">
         <div className="max-w-7xl mx-auto px-6 py-4 text-xs text-white flex flex-col md:flex-row justify-between items-center gap-3">
           <p>© 2024–2025. All Rights Reserved.</p>
+
           <div className="flex gap-4">
             <p className="hover:underline cursor-pointer">Privacy Policy</p>
             <p className="hover:underline cursor-pointer">Sitemap</p>
