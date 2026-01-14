@@ -10,6 +10,9 @@ import Team from './components/Team'
 import Videos from './components/Videos'
 import AboutHome from './components/about/About_Home'
 import ServicesHome from './components/services/ServicesHome'
+import TeamHome from './components/team/TeamHome'
+import BlogHome from './components/blog/BlogHome'
+import DetailsHome from './components/services/details/DetailsHome'
 
 export default function App() {
   return (
@@ -32,6 +35,12 @@ export default function App() {
         <Route path='/about' element = {<AboutHome/>}/>
 
         <Route path='/services' element = {<ServicesHome/>}/>
+
+        <Route path='/team' element = {<TeamHome/>}/>
+
+        <Route path='/blogs' element = {<BlogHome/>}/>
+
+        <Route path='/services/details' element = {<DetailsHome/>}/>
 
       </Routes>
     </main>
