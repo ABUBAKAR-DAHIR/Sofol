@@ -5,7 +5,7 @@ export default function RecentBlogs() {
     <section className="my-20">
         <div className="container flex flex-col justify-center items-center mx-auto">
             <p className="capitalize text-sofolRed">blogs</p>
-            <p className="font-semibold text-2xl text-sofolBlack">Stay up to date with our latest news</p>
+            <p className="font-semibold text-2xl text-sofolBlack max-md:text-center max-md:px-2">Stay up to date with our latest news</p>
             <div className="flex gap-2 my-2">
             <div className="h-[3.5px] w-25 bg-sofolRed rounded-full" />
             <div className="h-[3.5px] w-25 bg-sofolRed rounded-full" />
