@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer
       aria-label="Footer section"
-      className="w-full max-w-full flex-wrap bg-white md:pt-24 flex flex-col max-md:mt-160"
+      className="w-full max-w-full flex-wrap bg-white md:pt-24 flex flex-col max-md:mt-145"
     >
       
       {/* MAIN FOOTER */}
@@ -78,7 +78,7 @@ export default function Footer() {
                 placeholder="Enter your email"
                 className="flex-1 outline-none bg-sofolBlack/10 rounded-lg p-4 text-xs"
               />
-              <Button className="bg-sofolRed p-6">Subscribe</Button>
+              <Button className="bg-sofolRed p-6 max-md:w-full">Subscribe</Button>
             </div>
           </div>
 
