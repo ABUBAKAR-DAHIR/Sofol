@@ -39,7 +39,7 @@ export default function Footer() {
           </p>
 
           {/* DETAILS */}
-          <div className="flex justify-evenly w-full flex-wrap">
+          <div className="flex justify-evenly w-full flex-wrap gap-2">
             {footerDetails.map((footer, i) => (
               <div
                 key={i}
