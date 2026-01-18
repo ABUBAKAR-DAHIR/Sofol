@@ -117,7 +117,7 @@ export default function Navbar() {
         lg:hidden`}
       >
         <ul className="flex flex-col gap-4 p-6">
-          <NavLink to="/home" className={linkClass} onClick={() => setOpen(false)}>
+          <NavLink to="/" className={linkClass} onClick={() => setOpen(false)}>
             Home
           </NavLink>
           <NavLink to="/about" className={linkClass} onClick={() => setOpen(false)}>

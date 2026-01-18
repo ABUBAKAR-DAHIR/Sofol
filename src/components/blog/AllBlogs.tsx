@@ -4,7 +4,7 @@ export default function AllBlogs() {
   return (
     <section>
         <div className="max-w-5xl mx-auto">
-            <p className="font-semibold capitalize">all blogs</p>
+            <p className="font-semibold capitalize max-md:text-center max-md:mb-4">all blogs</p>
             {/* blogs */}
             <div className="flex flex-wrap items-center justify-center gap-8 relative">
                 {

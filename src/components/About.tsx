@@ -11,7 +11,6 @@ export default function About() {
     const isInView = useInView(ref, { once: true });
 
 
-
   return (
     <motion.section aria-label="about" 
         ref={ref}
@@ -37,7 +36,7 @@ export default function About() {
                 <div className="relative max-md:mb-10">
                     <img src="/about/dots.svg" alt="dots" className="-z-1 absolute -top-10 -right-10 max-md:size-10 max-md:-top-5 max-md:-right-5"/>
                     <img src="/about/dots.svg" alt="dots" className="-z-1 absolute -bottom-10 -left-10 max-md:size-10 max-md:-bottom-5 max-md:-left-5"/>
-                    <img src="/about/about_hero.png" alt="about_hero" width={400} height={300}/>
+                    <img src={buttonInfos[content].banner} alt="about_hero" width={400} height={300}/>
                 </div>
                 <div className="max-w-lg">
                     <p className="text-gray-400 mb-1 max-xl:mt-4">{buttonInfos[content].text}</p>

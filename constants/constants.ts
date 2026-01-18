@@ -22,18 +22,21 @@ export const contents = [
 // about
 export const buttonInfos = [
       {
+          banner: "/about/about_hero.png",
           image: "/about/Ad.svg",
           text: "Advertisement",
           slogan: "Save Time and Money with Our Professional Advertising Services!",
           content: "We advertise effectively across multiple channels, ensuring that every campaign reaches the right audience and drives measurable results. Our strategies are carefully planned and executed, combining creativity and analytics to optimize engagement, increase brand visibility, and deliver consistent performance that aligns with our clients’ goals. Every step is monitored, adjusted, and refined to ensure maximum impact and return on investment while maintaining high standards of quality, precision, and creativity across all advertising efforts."
       },
       {
+          banner: "/news/news1.png",
           image: "/about/Lamp.svg",
           text: "Planning",
           slogan: "Strategic Planning for Efficient and Successful Projects!",
           content: "We plan every project with meticulous attention to detail, taking into account timelines, resources, objectives, and potential risks. Our planning process ensures that every step is aligned with strategic goals and that all teams are coordinated to deliver results efficiently. Each plan is comprehensive, flexible, and adaptable, allowing us to respond to changing conditions while maintaining quality and performance. Through careful assessment, prioritization, and forecasting, we ensure that each project progresses smoothly and meets its intended outcomes with precision and reliability throughout all phases of development."
       },
       {
+          banner: "/news/news3.png",
           image: "/about/table.svg",
           text: "Development",
           slogan: "Building Robust Digital Products That Last!",
