@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer
       aria-label="Footer section"
-      className="w-full flex-wrap bg-white md:pt-24 flex flex-col max-md:mt-40"
+      className="w-full flex-wrap bg-white md:pt-24 flex flex-col max-md:mt-250"
     >
       
       {/* MAIN FOOTER */}
@@ -20,7 +20,7 @@ export default function Footer() {
         initial={{ opacity: 0, y: 80 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-7xl mx-auto px-6"
+        className="max-w-7xl mx-auto md:px-6"
       >
         {/* TOP SECTION */}
         <div className="flex flex-col items-center text-center gap-6">
