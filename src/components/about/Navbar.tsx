@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20 px-6 lg:px-20">
 
           {/* LOGO */}
-          <NavLink to="/home">
+          <NavLink to="/">
             <img
               src="/navbar/sofol.svg"
               alt="sofol_logo"
