@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer
       aria-label="Footer section"
-      className="w-full max-w-full flex-wrap bg-white md:pt-24 flex flex-col max-md:mt-200"
+      className="w-full max-w-full flex-wrap bg-white md:pt-24 flex flex-col max-md:mt-160"
     >
       
       {/* MAIN FOOTER */}
@@ -57,7 +57,7 @@ export default function Footer() {
         {/* DIVIDER */}
         <div className="my-12 h-px bg-gray-200" />
 
-        <div className="flex flex-wrap justify-between w-full gap-8 max-xl:justify-evenly max-md:justify-between">
+        <div className="flex flex-wrap justify-between w-full gap-8 max-xl:justify-evenly max-md:justify-center">
           <div className="max-w-lg flex flex-col justify-between max-md:gap-4">
             <h1 className="font-semibold uppercase text-sofolBlack">about</h1>
             <p className="text-sm text-sofolBlack/75 max-w-lg">
@@ -72,7 +72,7 @@ export default function Footer() {
             </p>
 
             <h1 className="font-semibold uppercase text-sofolBlack">newsletter</h1>
-            <div className="flex w-full justify-evenly gap-2">
+            <div className="flex w-full justify-evenly max-md:justify-center flex-wrap gap-2">
               <input
                 type="text"
                 placeholder="Enter your email"
