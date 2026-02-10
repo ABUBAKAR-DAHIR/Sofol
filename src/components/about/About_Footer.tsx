@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer
       aria-label="Footer section"
-      className="w-full flex-wrap bg-white md:pt-24 flex flex-col "
+      className="w-full flex-wrap bg-white md:pt-24 flex flex-col max-md:mt-40"
     >
       
       {/* MAIN FOOTER */}
@@ -57,7 +57,7 @@ export default function Footer() {
         {/* DIVIDER */}
         <div className="my-12 h-px bg-gray-200" />
 
-        <div className="flex flex-wrap justify-between w-full gap-8 max-xl:justify-evenly">
+        <div className="flex flex-wrap justify-between w-full gap-8 max-xl:justify-evenly max-md:justify-between">
           <div className="max-w-lg flex flex-col justify-between max-md:gap-4">
             <h1 className="font-semibold uppercase text-sofolBlack">about</h1>
             <p className="text-sm text-sofolBlack/75 max-w-lg">
