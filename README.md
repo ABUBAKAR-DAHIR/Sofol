@@ -3,7 +3,7 @@
 A modern, responsive **frontend-only landing page** built using **React + Vite + Tailwind CSS**.  
 This project focuses on clean UI, smooth animations, and reusable components — ideal for showcasing a startup or company brand.
 
-**Live Link: **: **[https://sofol.netlify.app](https://sofol.netlify.app)**
+🔗 **Live Demo:** [sofol.netlify.app](https://sofol.netlify.app)
 
 ---
 
