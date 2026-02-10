@@ -7,18 +7,20 @@ export default function RelevantBlogs() {
     const [index, setIndex] = useState<number>(0);
 
     const next = () => {
+        console.log("right")
         if(index < relevantBlogs.length - VISIBLE) {
             setIndex((prev) => prev+1)
-        } 
+        }
     }
 
     const prev = () => {
+        console.log("left")
         if(index > 0){
             setIndex((prev) => prev-1)
-        }else setIndex(relevantBlogs.length - VISIBLE)
+        }
     }
 
-    // let visibleBlogs = relevantBlogs.slice(index, index+VISIBLE);
+    let visibleBlogs = relevantBlogs.slice(index, index+VISIBLE);
     
     // 0       0 1 2
     // 1       1 2 3
@@ -36,7 +38,7 @@ export default function RelevantBlogs() {
             {/* blogs */}
             <div className="relative flex flex-wrap items-center justify-center gap-8">
                 {
-                    relevantBlogs.map((blog) => (
+                    visibleBlogs.map((blog) => (
                         <div key={blog.img} className=" w-80 flex justify-center items-center flex-col p-4 shadow-[0_0_0_1px_rgba(0,0,0,0.05),0_12px_30px_rgba(0,0,0,0.18)] rounded-2xl cursor-pointer hover:scale-105 duration-300">
                             <img src={blog.img} alt="blog_image" width={270} height={350}/>
                             <p className="font-semibold my-3">{blog.heading}</p>
@@ -48,8 +50,8 @@ export default function RelevantBlogs() {
                 }
 
                 {/* buttons */}
-                <div className='absolute -left-5 max-[1280px]:left-0 rounded-full border-2 p-3 cursor-pointer bg-sofolRed text-white' onClick={next}><ArrowLeft className=' size-5'/></div>
-                <div className='absolute -right-7 max-[1280px]:right-0 rounded-full border-2 p-3 cursor-pointer bg-sofolRed text-white' onClick={prev}><ArrowRight className='size-5'/></div>
+                <div className={`absolute -left-5 max-[1280px]:left-0 rounded-full border-2 p-3 ${ index === 0 ? 'bg-gray-600 cursor-not-allowed' : 'bg-sofolRed cursor-pointer'} text-white`} onClick={prev}><ArrowLeft className=' size-5'/></div>
+                <div className={`absolute -right-7 max-[1280px]:right-0 rounded-full border-2 p-3 ${ index === relevantBlogs.length-VISIBLE ? 'bg-gray-600 cursor-not-allowed' : 'bg-sofolRed cursor-pointer'} text-white`} onClick={next}><ArrowRight className='size-5'/></div>
                 
                 
             </div>
