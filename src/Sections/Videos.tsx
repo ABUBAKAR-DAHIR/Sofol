@@ -1,5 +1,5 @@
 import { Element } from "react-scroll"
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 export default function Videos() {    
