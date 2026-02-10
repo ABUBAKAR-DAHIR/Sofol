@@ -56,7 +56,7 @@ export default function Videos() {
                         <img src="videos/right.svg" alt="left" className="size-5 cursor-pointer" onClick={next}/>
                     </div>
                 </div>
-                <p className="font-bold">{index}, {index+VISIBLE}</p>
+                {/* <p className="font-bold">{index}, {index+VISIBLE}</p> */}
 
                 {/* Carousel part */}
                 <div className="flex items-center justify-center mx-auto w-full mb-200 flex-wrap max-md:items-center max-md:mx-auto">
