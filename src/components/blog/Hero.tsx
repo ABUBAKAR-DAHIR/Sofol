@@ -55,7 +55,7 @@ export default function Hero() {
         </motion.div>
       </AnimatePresence>
       {/* Dots */}
-      <div className="flex gap-2 absolute bottom-1/4 max-md:bottom-1/5">
+      <div className="flex gap-2 absolute bottom-1/6 max-md:bottom-1/8">
         {contents.map((_, i) => (
           <Dot
             key={i}
