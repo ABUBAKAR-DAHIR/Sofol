@@ -7,9 +7,9 @@ export default function RecentBlogs() {
             <p className="capitalize text-sofolRed">blogs</p>
             <p className="font-semibold text-2xl text-sofolBlack max-md:text-center max-md:px-2">Stay up to date with our latest news</p>
             <div className="flex gap-2 my-2">
-            <div className="h-[3.5px] w-25 bg-sofolRed rounded-full" />
-            <div className="h-[3.5px] w-25 bg-sofolRed rounded-full" />
-          </div>
+                <div className="h-[3.5px] w-25 bg-sofolRed rounded-full" />
+                <div className="h-[3.5px] w-25 bg-sofolRed rounded-full" />
+            </div>
         </div>
 
         <div className="max-w-5xl mx-auto mt-8 flex flex-wrap gap-16 items-center justify-between">
