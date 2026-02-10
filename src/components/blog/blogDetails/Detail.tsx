@@ -5,8 +5,9 @@ export default function Detail() {
   const id = match ? match[1] : null;
   if(!id) return <p>null id</p>
 
-  const blog = allBlogs[parseInt(id)]
-
+  const blog = allBlogs.find(blog => blog.id === parseInt(id))
+  if(!blog) return <p>No blog found</p>
+ 
   return (
     <section className="max-w-7xl mx-auto flex items-center justify-center" aria-label={blog.heading}>
       <div className="w-full max-[1280px]:px-10 mx-auto flex max-md:flex-col gap-12 items-center justify-between">
