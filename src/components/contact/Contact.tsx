@@ -1,5 +1,3 @@
-import { LocationEdit, Phone, Send } from "lucide-react";
-
 export default function Contact() {
   return (
     <section>
