@@ -13,6 +13,7 @@ import ServicesHome from './components/services/ServicesHome'
 import TeamHome from './components/team/TeamHome'
 import BlogHome from './components/blog/BlogHome'
 import DetailsHome from './components/services/details/DetailsHome'
+import NotFound from './components/NofFound'
 
 export default function App() {
   return (
@@ -41,6 +42,8 @@ export default function App() {
         <Route path='/blogs' element = {<BlogHome/>}/>
 
         <Route path='/services/details' element = {<DetailsHome/>}/>
+
+        <Route path='*' element = {<NotFound/>}/>
 
       </Routes>
     </main>
