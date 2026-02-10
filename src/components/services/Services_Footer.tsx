@@ -4,14 +4,14 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { footerDetails } from "../about/constants/constants";
 
-export default function ServicesFooter() {
+export default function Footer() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
     <footer
       aria-label="Footer section"
-      className="w-full bg-white pt-24 flex flex-col overflow-x-hidden"
+      className="w-full max-w-full flex-wrap bg-white md:pt-24 flex flex-col max-md:mt-145"
     >
       
       {/* MAIN FOOTER */}
@@ -20,7 +20,7 @@ export default function ServicesFooter() {
         initial={{ opacity: 0, y: 80 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-7xl mx-auto px-6"
+        className="w-full md:max-w-7xl mx-auto px-6 max-md:px-4"
       >
         {/* TOP SECTION */}
         <div className="flex flex-col items-center text-center gap-6">
@@ -41,7 +41,10 @@ export default function ServicesFooter() {
           {/* DETAILS */}
           <div className="flex justify-evenly w-full flex-wrap">
             {footerDetails.map((footer, i) => (
-              <div key={i} className="flex flex-col items-center gap-2">
+              <div
+                key={i}
+                className="flex flex-col items-center gap-2"
+              >
                 <img src={footer.image} alt={footer.name} className="w-8" />
                 <p className="text-xs font-semibold uppercase text-sofolBlack">
                   {footer.name}
@@ -50,30 +53,32 @@ export default function ServicesFooter() {
             ))}
           </div>
         </div>
-
+          
         {/* DIVIDER */}
         <div className="my-12 h-px bg-gray-200" />
 
-        <div className="flex flex-wrap justify-between w-full gap-8 max-xl:justify-evenly">
+        <div className="flex flex-wrap justify-between w-full gap-8 max-xl:justify-evenly max-md:justify-center">
           <div className="max-w-lg flex flex-col justify-between max-md:gap-4">
             <h1 className="font-semibold uppercase text-sofolBlack">about</h1>
             <p className="text-sm text-sofolBlack/75 max-w-lg">
               We are Sofol, delivering innovative software solutions that empower
               businesses to grow, streamline operations, and achieve digital
-              excellence across modern platforms...
+              excellence across modern platforms. We design, develop, and optimize
+              scalable systems that solve real problems, improve efficiency, and
+              create long-term value for organizations worldwide...
               <span className="text-sofolRed underline cursor-pointer">
                 Read more
               </span>
             </p>
 
             <h1 className="font-semibold uppercase text-sofolBlack">newsletter</h1>
-            <div className="flex w-full justify-evenly gap-2">
+            <div className="flex w-full justify-evenly max-md:justify-center flex-wrap gap-2">
               <input
                 type="text"
                 placeholder="Enter your email"
                 className="flex-1 outline-none bg-sofolBlack/10 rounded-lg p-4 text-xs"
               />
-              <Button className="bg-sofolRed p-6">Subscribe</Button>
+              <Button className="bg-sofolRed p-6 max-md:w-full">Subscribe</Button>
             </div>
           </div>
 
@@ -99,9 +104,15 @@ export default function ServicesFooter() {
             <h1 className="font-semibold uppercase text-sofolBlack max-xl:text-center">
               social media posts
             </h1>
+
             <div className="grid grid-cols-3 max-xl:flex max-xl:flex-wrap gap-4">
               {posts_images.map((img, i) => (
-                <img key={i} src={img} alt="image" className="w-16 object-contain" />
+                <img
+                  key={i}
+                  src={img}
+                  alt="image"
+                  className="w-16 object-contain"
+                />
               ))}
             </div>
           </div>
