@@ -34,7 +34,7 @@ export default function Hero() {
           transition={{ duration: 0.6, ease: "easeInOut" }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
-          onDragEnd={(e, info) => {
+          onDragEnd={(_, info) => {
             if (info.offset.x < -100) paginate(1);
             if (info.offset.x > 100) paginate(-1);
           }}
