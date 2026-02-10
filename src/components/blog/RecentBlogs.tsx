@@ -2,7 +2,7 @@ import { categories, recentBlogs } from "./constants/constants";
 
 export default function RecentBlogs() {
   return (
-    <section className="my-20">
+    <section className="my-20 max-w-5xl flex mx-auto flex-col items-center justify-center">
         <div className="container flex flex-col justify-center items-center mx-auto">
             <p className="capitalize text-sofolRed">blogs</p>
             <p className="font-semibold text-2xl text-sofolBlack max-md:text-center max-md:px-2">Stay up to date with our latest news</p>
@@ -12,9 +12,9 @@ export default function RecentBlogs() {
             </div>
         </div>
 
-        <div className="max-w-5xl mx-auto mt-8 flex flex-wrap gap-16 items-center justify-between">
+        <div className="w-full flex mx-auto mt-8 bg-red flex-wrap gap-16 items-center justify-between">
             {/* recent blogs */}
-            <div>
+            <div className="flex flex-col mx-auto">
                 <p className="font-semibold capitalize my-4 max-md:text-center">recent blogs</p>
                 
                 {/* blogs */}
@@ -35,7 +35,7 @@ export default function RecentBlogs() {
             </div>
 
             {/* category list */}
-            <div className="my-auto max-md:mx-auto">
+            <div className="my-auto flex flex-col mx-auto">
                 <p className="font-semibold capitalize my-4 mb-8">category list</p>
                 <div className="flex flex-col justify-between h-90">
                     {

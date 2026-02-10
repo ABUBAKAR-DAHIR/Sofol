@@ -22,7 +22,7 @@ export default function Detail() {
               <div className="flex flex-col justify-between h-90 max-md:flex-1">
                   {
                       categories.map(category => (
-                          <div className="">
+                          <div key={category} className="">
                               <p className="text-sofolBlack/50 cursor-pointer hover:text-sofolBlack duration-300">{category}</p>
                           </div>
                       ))
