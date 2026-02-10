@@ -33,7 +33,7 @@ export default function Content() {
 
                     {/* tools */}
                     
-                    <h3 className="text-lg uppercase font-semibold mt-4 mb-1 text-gray-800 mt-6">tools used</h3>
+                    <h3 className="text-lg uppercase font-semibold mb-1 text-gray-800 mt-6">tools used</h3>
                     <div className="flex gap-4 flex-wrap">
                         <div className="rounded-4xl shadow-xl cursor-pointer flex gap-2 items-center justify-center px-4 hover:bg-gray-700 hover:text-white duration-500  ">
                             <img src="/public/projects-section/details/figma.svg" alt="figma_svg" className="size-6"/>

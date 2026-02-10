@@ -5,10 +5,10 @@ export default function RecentProjects() {
     <section className="max-w-7xl flex flex-col items-center justify-center mx-auto">
         <p className="font-semibold my-4">Recent projects</p>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-3 items-center justify-center mx-auto">
             {
                 recentProjects.map((proj, i) => (
-                    <div key={i} className="size-70">
+                    <div key={i} className="size-70 mb-6">
                         <img src={proj.img} alt="project_image" />
                     </div>
                 ))

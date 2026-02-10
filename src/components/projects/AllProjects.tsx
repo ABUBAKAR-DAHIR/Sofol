@@ -22,22 +22,26 @@ export default function AllProjects() {
       </div>
 
       {/* images */}
-      <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-4 mt-10">
+      <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-8 mt-10">
         {
-          allProjects.map((proj) => (
-            <div>
-            {
-                proj.category === department && (
-                <div key={proj.id} className="size-65 shadow-lg shadow-sofolBlack/20 cursor-pointer hover:scale-105 transform-all duration-300 mb-8" onClick={() => window.location.href = `/projects/${proj.id}`}>
-                    <img src={proj.img} alt="proj_image"/>
-                </div>
-                )
-              }
-              
-            </div>
-          ))
+          allProjects
+            .filter(proj => proj.category === department)
+            .map((proj) => (
+              <div
+                key={proj.id}
+                className="flexshrink-0 size-65 shadow-lg shadow-sofolBlack/20 cursor-pointer rounded-2xl hover:scale-105 transition-transform duration-300"
+                onClick={() => window.location.href = `/projects/${proj.id}`}
+              >
+                <img
+                  src={proj.img}
+                  alt="proj_image"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            ))
         }
       </div>
+
     </section>
   )
 }
