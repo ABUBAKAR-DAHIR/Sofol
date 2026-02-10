@@ -35,7 +35,7 @@ export default function RecentBlogs() {
             </div>
 
             {/* category list */}
-            <div className="my-auto">
+            <div className="my-auto max-md:mx-auto">
                 <p className="font-semibold capitalize my-4 mb-8">category list</p>
                 <div className="flex flex-col justify-between h-90">
                     {
