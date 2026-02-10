@@ -22,7 +22,8 @@ export default function Hero() {
   return (
     <section className='relative h-[calc(100vh-130px)] max-xl:h-[calc(100vh-80px)] bg-[url("/about-section/hero.png")] bg-cover bg-center bg-no-repeat overflow-hidden flex flex-col justify-center items-center text-center'>
 
-     {/* <section className="relative h-screen overflow-hidden bg-black text-white flex items-center justify-center"> */}
+      {/* 🔴 OVERLAY (40% opacity) */}
+      <div className="absolute inset-0 bg-black/40 z-0" />
 
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
