@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import { Button } from "../components/ui/button";
+import { Button } from "./ui/button";
 import { team } from "../../constants/constants";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -14,7 +14,7 @@ export default function Team() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9 }}
     >
-        <Element name="team" className="pt-20 flex flex-col pb-40 overflow-clip">
+        <Element name="team" className="flex flex-col pt-10 overflow-clip">
             <div className="max-w-7xl mx-auto max-xl:px-10 max-md:px-4">
                 <p className="capitalize text-sofolRed">about us</p>
                 <div className="flex justify-between max-md:block">

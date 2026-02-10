@@ -1,5 +1,7 @@
 import type { PricingCardType } from "../src/components/PricingCard";
 
+//   HOME SECTION
+
 // hero
 export const contents = [
     {
@@ -259,3 +261,46 @@ export const footerLinks = [
         ]
     }
 ]
+
+// src/components/footer/constnats/constants.ts
+
+export type FooterImageItem = {
+  image: string;
+  alt: string;
+};
+
+export type FooterLinkGroup = {
+  header: string;
+  links: string[];
+};
+
+/**
+ * SCREEN 2 FOOTER
+ * Nine footer images: /footer/footer1.png ... /footer/footer9.png
+ */
+export const screen2FooterImages: FooterImageItem[] = Array.from(
+  { length: 9 },
+  (_, i) => ({
+    image: `/footer/footer${i + 1}.png`,
+    alt: `Footer asset ${i + 1}`,
+  })
+);
+
+export const screen2FooterLinks: FooterLinkGroup[] = [
+  {
+    header: "Company",
+    links: ["About", "Careers", "Press", "Contact"],
+  },
+  {
+    header: "Product",
+    links: ["Features", "Pricing", "Integrations", "Updates"],
+  },
+  {
+    header: "Resources",
+    links: ["Docs", "Guides", "Blog", "FAQ"],
+  },
+  {
+    header: "Legal",
+    links: ["Privacy Policy", "Terms of Use", "Cookie Policy", "Sitemap"],
+  },
+];

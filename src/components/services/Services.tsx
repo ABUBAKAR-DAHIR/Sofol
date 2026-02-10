@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import { services } from "../../constants/constants";
+import { services } from "../../../constants/constants";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 

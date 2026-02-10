@@ -46,9 +46,9 @@ export default function Videos() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9 }}
     >
-        <Element  name="videos" className="py-20 mb-40 max-md:mb-150">
+        <Element  name="videos" className="py-20 xl:mb-10 max-md:mb-110">
             {/* Red part */}
-            <div className="bg-sofolRed h-70 xl:px-60 ">
+            <div className="bg-sofolRed h-70 xl:px-60">
                 <div className="uppercase tracking-normal text-white container mx-auto py-10 flex justify-between max-md:flex-col max-md:justify-center max-md:items-center max-md:px-4">
                     <span>Don't take our word for it listen to our clients</span>
                     <div className="flex gap-2">
@@ -63,7 +63,7 @@ export default function Videos() {
                     <div className="w-full flex justify-center  flex-wrap items-center max-md:mx-auto ">
                         {
                             visibleImages.map((image, i) => (
-                                <img key={i} src={image} alt={image} className="object-contain max-md:size-60 md:size-80"/>
+                                <img key={i} src={image} alt={image} className="object-contain max-md:size-60 max-xl:size-62.5 xl:size-80"/>
                             ))
                         }
                     </div>

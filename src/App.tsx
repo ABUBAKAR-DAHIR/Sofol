@@ -1,25 +1,39 @@
-import About from './Sections/About'
-import Footer from './Sections/Footer'
-import Home from './Sections/Home'
-import News from './Sections/News'
-import Pricing from './Sections/Pricing'
-import Services from './Sections/Services'
-import Statistics from './Sections/Statistics'
-import Team from './Sections/Team'
-import Videos from './Sections/Videos'
+import { Route, Routes } from 'react-router-dom'
+import About from './components/About'
+import Footer from './components/Footer'
+import Home from './components/Home'
+import News from './components/News'
+import Pricing from './components/services/Pricing'
+import Services from './components/services/Services'
+import Statistics from './components/Statistics'
+import Team from './components/Team'
+import Videos from './components/Videos'
+import AboutHome from './components/about/About_Home'
+import ServicesHome from './components/services/ServicesHome'
 
 export default function App() {
   return (
     <main>
-      <Home />
-      <About />
-      <Services />
-      <Statistics />
-      <Team />
-      <News />
-      <Pricing />
-      <Videos />
-      <Footer />
+      <Routes>
+        <Route path='/' element={
+          <>
+          <Home />
+          <About />
+          <Services />
+          <Statistics />
+          <Team />
+          <News />
+          <Pricing />
+          <Videos />
+          <Footer />
+          </>
+        }/>
+
+        <Route path='/about' element = {<AboutHome/>}/>
+
+        <Route path='/services' element = {<ServicesHome/>}/>
+
+      </Routes>
     </main>
   )
 }
