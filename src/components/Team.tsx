@@ -48,8 +48,8 @@ export default function Team() {
         <div className="max-w-7xl mx-auto max-xl:px-10 max-md:px-4">
           <p className="capitalize text-sofolRed">about us</p>
 
-          <div className="flex justify-between max-md:block">
-            <p className="font-semibold text-[25px]">
+          <div className="flex justify-between max-md:flex-col flex-wrap">
+            <p className="font-semibold text-[25px] max-md:text-center">
               Who we are: Dreamers, doers, and change-makers.
             </p>
             <Button variant="link" className="text-sofolRed max-md:p-0">
