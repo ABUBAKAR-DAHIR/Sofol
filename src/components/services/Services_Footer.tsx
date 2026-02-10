@@ -81,7 +81,7 @@ export default function ServicesFooter() {
               <div key={i} className="flex gap-3">
                 <img
                   src={post.image}
-                  className="w-12 h-12 object-cover rounded-md flex-shrink-0"
+                  className="w-12 h-12 object-cover rounded-md shrink-0"
                   alt={post.title}
                 />
                 <div className="min-w-0">
