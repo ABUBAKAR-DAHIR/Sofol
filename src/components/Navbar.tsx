@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20 px-6 lg:px-20">
 
           {/* LOGO */}
-          <NavLink to="/home">
+          <NavLink to="/">
             <img
               src="/navbar/sofol.svg"
               alt="sofol_logo"
@@ -117,7 +117,7 @@ export default function Navbar() {
         lg:hidden`}
       >
         <ul className="flex flex-col gap-4 p-6">
-          <NavLink to="/home" className={linkClass} onClick={() => setOpen(false)}>
+          <NavLink to="/" className={linkClass} onClick={() => setOpen(false)}>
             Home
           </NavLink>
           <NavLink to="/about" className={linkClass} onClick={() => setOpen(false)}>
