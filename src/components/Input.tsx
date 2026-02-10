@@ -5,9 +5,12 @@ interface InputInterface {
 }
 
 export default function Input({type, placeholder, className} : InputInterface) {
-  return (
+  return(
     <div className={`relative ${className}`}>
-        <input type={type} id={type} placeholder=" " className="relative w-full px-2 py-3 border-2 border-black outline-none peer rounded-sm" />
+        {type === "textarea" ?
+        <textarea rows={10} cols={4} id={type} placeholder=" " className="relative w-full px-2 py-3 border-2 border-black outline-none peer rounded-sm" />
+        :
+        <input type={type} id={type} placeholder=" " className="relative w-full px-2 py-3 border-2 border-black outline-none peer rounded-sm" />}
         <label htmlFor={type} 
             className="
                 absolute top-4 left-3 text-sm duration-400 px-2 rounded-sm

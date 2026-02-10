@@ -19,7 +19,8 @@ export default function Contact() {
                     <form action="" className="flex flex-col mr-4 w-9/20 max-sm:w-full">
                         <Input type="text" placeholder="First name and last name" className="mb-2.5"/>
                         <Input type="email" placeholder="Email" className="mb-2.5"/>
-                        <textarea name="" id="" cols={4} rows={10} placeholder="your message" className="resize-none px-2 py-2.5 border-2 border-black rounded-sm my-1 text-sm text-gray-800 outline-none"></textarea>
+                        <Input type="textarea" placeholder="Message" className="mb-2.5"/>
+                        {/* <textarea name="" id="" cols={4} rows={10} placeholder="your message" className="resize-none px-2 py-2.5 border-2 border-black rounded-sm my-1 text-sm text-gray-800 outline-none"></textarea> */}
                         <button type="submit" className="bg-sofolRed text-white capitalize cursor-pointer hover:bg-sofolRed/70 w-full rounded-xl py-3 mt-4">submit</button>
                     </form>
 
