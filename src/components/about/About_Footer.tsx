@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer
       aria-label="Footer section"
-      className="w-full bg-white md:pt-24 flex flex-col overflow-x-hidden"
+      className="w-full flex-wrap bg-white md:pt-24 flex flex-col "
     >
       
       {/* MAIN FOOTER */}
