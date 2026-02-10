@@ -136,6 +136,13 @@ export default function Navbar() {
           <NavLink to="/projects" className={linkClass} onClick={() => setOpen(false)}>
             Projects
           </NavLink>
+          <NavLink
+              to="/contact"
+              className="bg-sofolRed px-8 py-3.5 rounded-lg text-white hover:bg-sofolRed/85 text-center"
+              onClick={() => window.location.href="/contact"}
+            >
+              Contact Us
+          </NavLink>
         </ul>
       </div>
 
