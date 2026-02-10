@@ -99,7 +99,7 @@ export default function Navbar() {
 
           {/* MOBILE MENU BUTTON */}
           <button
-            className="lg:hidden"
+            className="lg:hidden cursor-pointer"
             onClick={() => setOpen(!open)}
           >
             {open ? <X size={28} /> : <Menu size={28} />}
