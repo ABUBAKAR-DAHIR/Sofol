@@ -2,14 +2,14 @@ import { useState } from "react"
 import { designerImages } from "./constants/constants"
 
 const departments = [
-  'creative designers',
-  'marketers',
-  'software developers',
-  'creative writers',
+  'creative designer',
+  'marketer',
+  'software developer',
+  'creative writer',
   'human resources'
 ]
 export default function Departments() {
-  const [department, setDepartment] = useState<string>('')
+  const [department, setDepartment] = useState<string>(departments[0])
   return (
     <section className="my-20">
       {/* nav buttons */}
@@ -24,7 +24,7 @@ export default function Departments() {
       {/* images */}
       <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-4 mt-10">
         {
-          designerImages.map(designer => (
+          designerImages.map(designer => designer.job.toLowerCase() === department && (
             <div className="shadow-lg shadow-sofolBlack/20 rounded-xl cursor-pointer hover:scale-105 transform-all duration-300 p-10 group">
               <img src={designer.img} alt="designer_image" className="size-40"/>
               <p className="text-sofolBlack font-semibold text-center uppercase mt-6 mb-1 group-hover:text-sofolRed">{designer.name}</p>

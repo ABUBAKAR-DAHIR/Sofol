@@ -63,7 +63,7 @@ export default function Navbar() {
               </div>
 
               <ul className="absolute top-full left-0 mt-3 w-44 bg-white shadow-lg rounded-lg opacity-0 invisible
-                             group-hover:opacity-100 group-hover:visible transition-all">
+                             group-hover:opacity-100 group-hover:visible transition-all overflow-clip">
                 <li className="px-4 py-2 hover:bg-gray-100">
                   <NavLink to="/services/web">Web Development</NavLink>
                 </li>
