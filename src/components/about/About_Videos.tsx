@@ -46,7 +46,7 @@ export default function AboutVideos() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9 }}
     >
-        <Element  name="videos" className="py-20 max-[720px]:mb-40 max-[480px]:mb-110">
+        <Element  name="videos" className="py-20 max-[735px]:mb-40 max-[495px]:mb-110">
             {/* Red part */}
             <div className="bg-sofolRed h-70 xl:px-60">
                 <div className="uppercase tracking-normal text-white container mx-auto py-10 flex justify-between max-md:flex-col max-md:justify-center max-md:items-center max-md:px-4">
