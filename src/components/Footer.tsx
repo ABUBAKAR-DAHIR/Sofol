@@ -8,7 +8,7 @@ export default function Footer() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <footer aria-label="Footer section" className="w-full bg-white pt-24 flex flex-col">
+    <footer aria-label="Footer section" className="w-full bg-white md:pt-8 flex flex-col">
       
       {/* MAIN FOOTER */}
       <motion.div

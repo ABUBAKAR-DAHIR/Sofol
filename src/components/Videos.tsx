@@ -1,14 +1,15 @@
 import { Element } from "react-scroll"
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 export default function Videos() {    
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
+    const [small, setSmall] = useState<boolean>(false)
     
     const [index, setIndex] = useState<number>(0)
     
-    const VISIBLE = 3
+    const VISIBLE = small ? 2 : 3;
     
     const next = () => {
         setIndex((curr) => curr >= images.length - 1  ? 0 : curr + 1 )
@@ -33,12 +34,17 @@ export default function Videos() {
     });
 
 
-    // useEffect(()=>{
-    //     const imageSlider = setInterval(() => {
-    //         next()
-    //     }, 5000);
-    //     return re
-    // })
+    useEffect(() => {
+  const defineSmall = () => {
+    setSmall(window.innerWidth < 735);
+  };
+
+  defineSmall(); // run once on mount
+  window.addEventListener("resize", defineSmall);
+
+  return () => window.removeEventListener("resize", defineSmall);
+}, []);
+
   return (
     <motion.section aria-label="Videos"
         ref={ref}
