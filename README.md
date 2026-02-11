@@ -36,51 +36,226 @@ This project focuses on clean UI, smooth animations, and reusable components —
 sofol/
 │
 ├── constants/
-│ └── constants.ts # Centralized static data
+│   └── constants.ts
 │
-├── public/ # Static assets
-│ ├── about/
-│ ├── footer/
-│ ├── header/
-│ ├── hero/
-│ ├── navbar/
-│ ├── news/
-│ ├── pricing/
-│ ├── services/
-│ ├── team/
-│ └── videos/
+├── node_modules/
+│
+├── public/
+│   ├── about/
+│   │   ├── about_hero.png
+│   │   ├── Ad.svg
+│   │   ├── Arrow.svg
+│   │   ├── dots.svg
+│   │   ├── Lamp.svg
+│   │   ├── table.svg
+│   │   └── Vector.svg
+│   │
+│   ├── about-section/
+│   │   ├── about1.png
+│   │   ├── about2.png
+│   │   ├── about3.png
+│   │   ├── hero.png
+│   │   └── footer/
+│   │       ├── footer1.png
+│   │       ├── footer2.png
+│   │       ├── footer3.png
+│   │       ├── footer4.png
+│   │       ├── footer5.png
+│   │       ├── footer6.png
+│   │       ├── footer7.png
+│   │       ├── footer8.png
+│   │       └── footer9.png
+│   │
+│   ├── blog-section/
+│   │   ├── HeroBlog.png
+│   │   ├── allBlogs/
+│   │   │   ├── blog3.png
+│   │   │   ├── blog4.png
+│   │   │   ├── blog5.png
+│   │   │   ├── blog6.png
+│   │   │   ├── blog7.png
+│   │   │   ├── blog8.png
+│   │   │   ├── blog9.png
+│   │   │   ├── blog10.png
+│   │   │   ├── blog11.png
+│   │   │   └── blog12.png
+│   │   └── recentBlogs/
+│   │       ├── blog1.png
+│   │       └── blog2.png
+│   │
+│   ├── contact/
+│   │   ├── behance.svg
+│   │   ├── email.svg
+│   │   ├── facebook.svg
+│   │   ├── linkedin.svg
+│   │   ├── location.svg
+│   │   ├── map.png
+│   │   └── phone.svg
+│   │
+│   ├── footer/
+│   │   ├── call-calling.svg
+│   │   ├── location.svg
+│   │   ├── sms.svg
+│   │   └── sofol_footer.svg
+│   │
+│   ├── header/
+│   │   ├── behance.svg
+│   │   ├── call.svg
+│   │   ├── email.svg
+│   │   ├── facebook.svg
+│   │   ├── linkedin.svg
+│   │   ├── location.svg
+│   │   ├── p.svg
+│   │   └── time.svg
+│   │
+│   ├── hero/
+│   │   └── hero.png
+│   │
+│   ├── navbar/
+│   │   └── sofol.svg
+│   │
+│   ├── news/
+│   │   ├── news1.png
+│   │   ├── news2.png
+│   │   └── news3.png
+│   │
+│   ├── pricing/
+│   │   ├── check.svg
+│   │   └── lock.svg
+│   │
+│   ├── projects-section/
+│   │   ├── all-projects/
+│   │   │   ├── img1.png
+│   │   │   ├── img2.png
+│   │   │   ├── img3.png
+│   │   │   ├── img4.png
+│   │   │   ├── img5.png
+│   │   │   ├── img6.png
+│   │   │   ├── img7.png
+│   │   │   └── img8.png
+│   │   │
+│   │   ├── recent-projects/
+│   │   │   ├── img1.png
+│   │   │   ├── img2.png
+│   │   │   ├── img3.png
+│   │   │   └── img4.png
+│   │   │
+│   │   └── details/
+│   │       ├── adobe-illustrator.svg
+│   │       ├── figma.svg
+│   │       ├── img1.png
+│   │       ├── img2.png
+│   │       ├── img3.png
+│   │       ├── img4.png
+│   │       ├── img5.png
+│   │       └── main.png
+│   │
+│   ├── services/
+│   │   ├── ads.svg
+│   │   ├── backg.png
+│   │   ├── brain.svg
+│   │   ├── doc.svg
+│   │   ├── Ellipse 6.svg
+│   │   ├── line.png
+│   │   └── details/
+│   │       ├── hero.png
+│   │       ├── icon1.svg
+│   │       ├── icon2.svg
+│   │       ├── project1.png
+│   │       ├── project2.png
+│   │       ├── project3.png
+│   │       └── project4.png
+│   │
+│   ├── services-section/
+│   │
+│   ├── team/
+│   │   ├── naag1.png
+│   │   ├── naag2.png
+│   │   └── naag3.png
+│   │
+│   ├── team-section/
+│   │   ├── hero.png
+│   │   ├── designers/
+│   │   │   ├── img1.png
+│   │   │   ├── img2.png
+│   │   │   ├── img3.png
+│   │   │   ├── img4.png
+│   │   │   ├── img5.png
+│   │   │   ├── img6.png
+│   │   │   ├── img7.png
+│   │   │   └── img8.png
+│   │   │
+│   │   └── products/
+│   │       ├── img1.png
+│   │       ├── img2.png
+│   │       ├── img3.png
+│   │       └── img4.png
+│   │
+│   ├── videos/
+│   │   ├── left.svg
+│   │   ├── right.svg
+│   │   ├── video1.png
+│   │   ├── video2.png
+│   │   └── video3.png
+│   │
+│   ├── Hero Section.png
+│   └── _redirects
 │
 ├── src/
-│ ├── components/
-│ │ ├── ui/ # Reusable UI primitives
-│ │ ├── AboutButton.tsx
-│ │ ├── Header.tsx
-│ │ ├── Navbar.tsx
-│ │ └── PricingCard.tsx
-│ │
-│ ├── sections/ # Page sections
-│ │ ├── About.tsx
-│ │ ├── Footer.tsx
-│ │ ├── Hero.tsx
-│ │ ├── Home.tsx
-│ │ ├── News.tsx
-│ │ ├── Pricing.tsx
-│ │ ├── Services.tsx
-│ │ ├── Statistics.tsx
-│ │ ├── Team.tsx
-│ │ └── Videos.tsx
-│ │
-│ ├── lib/ # Utilities/helpers
-│ ├── App.tsx
-│ ├── main.tsx
-│ └── index.css
+│   ├── components/
+│   │   ├── about/
+│   │   │   ├── constants/
+│   │   │   ├── About_About.tsx
+│   │   │   ├── About_Footer.tsx
+│   │   │   ├── About_Home.tsx
+│   │   │   ├── About_Services.tsx
+│   │   │   ├── About_Videos.tsx
+│   │   │   ├── Header.tsx
+│   │   │   ├── Hero.tsx
+│   │   │   └── Navbar.tsx
+│   │   │
+│   │   ├── blog/
+│   │   ├── contact/
+│   │   ├── projects/
+│   │   ├── services/
+│   │   ├── team/
+│   │   ├── ui/
+│   │   │
+│   │   ├── About.tsx
+│   │   ├── AboutButton.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Home.tsx
+│   │   ├── Input.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── News.tsx
+│   │   ├── NofFound.tsx
+│   │   ├── PricingCard.tsx
+│   │   ├── Statistics.tsx
+│   │   ├── Team.tsx
+│   │   └── Videos.tsx
+│   │
+│   ├── lib/
+│   │   └── utils.ts
+│   │
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
 │
+├── .gitignore
+├── components.json
+├── eslint.config.js
 ├── index.html
-├── tailwind.config.ts
-├── vite.config.ts
 ├── package.json
 ├── pnpm-lock.yaml
-└── README.md
+├── README.md
+├── tailwind.config.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
 ```
 ## 🧠 Architecture Overview
 
