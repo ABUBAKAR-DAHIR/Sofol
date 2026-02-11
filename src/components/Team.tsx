@@ -49,10 +49,10 @@ export default function Team() {
           <p className="capitalize text-sofolRed">about us</p>
 
           <div className="flex justify-between max-md:flex-col flex-wrap">
-            <p className="font-semibold text-[25px] max-md:text-center">
+            <p className="font-semibold text-[25px]  max-md:text-start">
               Who we are: Dreamers, doers, and change-makers.
             </p>
-            <Button variant="link" className="text-sofolRed max-md:p-0">
+            <Button variant="link" className="text-sofolRed max-md:p-0 max-md:justify-start">
               See all
             </Button>
           </div>
