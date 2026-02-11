@@ -22,8 +22,8 @@ export default function Statistics() {
             {/* <div> */}
                 {
                     statistics.map((statistic, i) => (
-                        <div className="md:border-l-2 border-white lg:w-[calc((100vw-620px)/3)] md:pl-20">
-                            <p key={i}><span className="block text-4xl font-semibold  ">{statistic.amount}</span>{statistic.desc}</p>
+                        <div className="md:border-l-2 border-white lg:w-[calc((100vw-620px)/3)] md:pl-20 max-md:text-center max-md:my-2">
+                            <p key={i}><span className="block text-4xl font-semibold max-md:text-center ">{statistic.amount}</span>{statistic.desc}</p>
                         </div>
                     ))
                 }
