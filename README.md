@@ -310,7 +310,7 @@ pnpm build
 
 ## 👤 Author
 
-Built as part of **GraphicsHala Internship**.
+Built as part of **[Graphicshaala](https://graphicshaala.com) Internship**.
 
 ## 📄 License
 
