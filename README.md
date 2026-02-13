@@ -12,8 +12,8 @@ This project focuses on clean UI, smooth animations, and reusable components —
 - **React** – Component-based UI
 - **Vite** – Fast development & build tool
 - **Tailwind CSS** – Utility-first styling
-- **JavaScript (ES6+)**
-- **HTML5 & CSS3**
+- **Typescript**
+- **Netlify**
 
 ---
 
